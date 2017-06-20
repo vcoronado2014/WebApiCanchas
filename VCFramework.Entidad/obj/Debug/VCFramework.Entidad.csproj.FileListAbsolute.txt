@@ -1,0 +1,5 @@
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.Entidad\bin\Debug\VCFramework.Entidad.dll
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.Entidad\bin\Debug\VCFramework.Entidad.pdb
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.dll
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.pdb
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.csprojResolveAssemblyReference.cache

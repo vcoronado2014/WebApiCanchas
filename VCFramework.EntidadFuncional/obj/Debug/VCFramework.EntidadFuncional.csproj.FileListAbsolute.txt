@@ -1,0 +1,7 @@
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.csprojResolveAssemblyReference.cache
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\bin\Debug\VCFramework.EntidadFuncional.dll
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\bin\Debug\VCFramework.EntidadFuncional.pdb
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Entidad.dll
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Entidad.pdb
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.dll
+D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.pdb
