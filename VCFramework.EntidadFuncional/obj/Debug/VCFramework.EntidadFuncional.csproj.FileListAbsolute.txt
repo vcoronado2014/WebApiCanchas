@@ -5,3 +5,10 @@ D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\bin\Debug\VCFram
 D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Entidad.pdb
 D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.dll
 D:\APP_CANCHAS\API\WebApplication1\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.pdb
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.EntidadFuncional.dll
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.EntidadFuncional.pdb
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Entidad.dll
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Entidad.pdb
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.csprojResolveAssemblyReference.cache
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.dll
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.pdb
