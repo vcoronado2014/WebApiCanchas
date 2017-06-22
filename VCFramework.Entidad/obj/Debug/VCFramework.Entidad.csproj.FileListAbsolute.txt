@@ -5,6 +5,6 @@ D:\APP_CANCHAS\API\WebApplication1\VCFramework.Entidad\obj\Debug\VCFramework.Ent
 D:\APP_CANCHAS\API\WebApplication1\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.csprojResolveAssemblyReference.cache
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.Entidad\bin\Debug\VCFramework.Entidad.dll
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.Entidad\bin\Debug\VCFramework.Entidad.pdb
-D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.csprojResolveAssemblyReference.cache
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.dll
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.pdb
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.Entidad\bin\Debug\VCFramework.Negocio.Factory.dll

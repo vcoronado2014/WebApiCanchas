@@ -12,3 +12,4 @@ D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCF
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.csprojResolveAssemblyReference.cache
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.dll
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.pdb
+D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Negocio.Factory.dll

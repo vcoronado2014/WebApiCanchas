@@ -216,6 +216,8 @@
     <Compile Include="Controllers\AgendaExceptionFilter.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\TipoCanchaController.cs" />
+    <Compile Include="Controllers\TipoSuperficieController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -36,6 +36,17 @@ namespace WebApplication1
             );
             #endregion
 
+            #region  TipoSuperficie
+            config.Routes.MapHttpRoute(
+                name: "TipoSuperficie",
+                routeTemplate: "api/TipoSuperficie",
+                defaults: new
+                {
+                    controller = "TipoSuperficie"
+                }
+            );
+            #endregion
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
