@@ -1,0 +1,14 @@
+*.suo
+*.csproj.user
+bin
+obj
+*.pdb
+_ReSharper*
+*.ReSharper.user
+*.ReSharper
+desktop.ini
+.eprj
+.idea
+*.anvil*
+*node_modules*
+.DS_Store
