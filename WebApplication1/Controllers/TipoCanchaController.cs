@@ -37,7 +37,7 @@ namespace WebApplication1.Controllers
                 if (idBuscar > 0)
                     tipos = VCFramework.Entidad.TipoCancha.ListarPorId(idBuscar);
                 else
-                    tipos = VCFramework.Entidad.TipoCancha.Listar();
+                    tipos = new List<VCFramework.Entidad.TipoCancha>();
 
                 if (tipos != null)
                 {
@@ -60,9 +60,10 @@ namespace WebApplication1.Controllers
             return httpResponse;
         }
 
+
         [System.Web.Http.AcceptVerbs("GET")]
         [HttpGet]
-        public HttpResponseMessage GetAll()
+        public HttpResponseMessage GetAll([FromUri]string instId)
         {
 
 
@@ -70,7 +71,7 @@ namespace WebApplication1.Controllers
             try
             {
                 List<VCFramework.Entidad.TipoCancha> tipos = new List<VCFramework.Entidad.TipoCancha>();
-                tipos = VCFramework.Entidad.TipoCancha.Listar();
+                tipos = VCFramework.Entidad.TipoCancha.Listar().FindAll(p=>p.InstId == int.Parse(instId));
 
                 if (tipos != null)
                 {
