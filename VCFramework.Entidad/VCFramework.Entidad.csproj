@@ -42,7 +42,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="VCFramework.Negocio.Factory">
-      <HintPath>..\..\..\..\APP_CANCHAS\API\WebApplication1\dlls\VCFramework.Negocio.Factory.dll</HintPath>
+      <HintPath>..\dlls\VCFramework.Negocio.Factory.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

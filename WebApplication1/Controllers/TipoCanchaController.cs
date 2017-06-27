@@ -208,5 +208,50 @@ namespace WebApplication1.Controllers
             return httpResponse;
         }
 
+        [System.Web.Http.AcceptVerbs("DELETE")]
+        public HttpResponseMessage Delete(dynamic DynamicClass)
+        {
+
+            string Input = JsonConvert.SerializeObject(DynamicClass);
+
+            dynamic data = JObject.Parse(Input);
+
+            //validaciones antes de ejecutar la llamada.
+            if (data.Id == 0)
+                throw new ArgumentNullException("Id");
+
+
+            HttpResponseMessage httpResponse = new HttpResponseMessage();
+
+            try
+            {
+                string id = data.Id;
+                int idBuscar = int.Parse(id);
+                List<VCFramework.Entidad.TipoCancha> tipoCancha = VCFramework.Entidad.TipoCancha.ListarPorId(idBuscar);
+
+                if (tipoCancha != null && tipoCancha[0].Id > 0)
+                {
+                    tipoCancha[0].Eliminado = 1;
+
+                    int idEliminado = VCFramework.Entidad.TipoCancha.Actualizar(tipoCancha[0]);
+
+                    httpResponse = new HttpResponseMessage(HttpStatusCode.OK);
+                    String JSON = JsonConvert.SerializeObject(tipoCancha);
+                    httpResponse.Content = new StringContent(JSON);
+                    httpResponse.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(VCFramework.NegocioMySql.Utiles.JSON_DOCTYPE);
+
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                httpResponse = new HttpResponseMessage(HttpStatusCode.ExpectationFailed);
+                throw ex;
+            }
+            return httpResponse;
+
+        }
+
     }
 }
