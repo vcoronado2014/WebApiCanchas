@@ -47,6 +47,28 @@ namespace WebApplication1
             );
             #endregion
 
+            #region  Canchas
+            config.Routes.MapHttpRoute(
+                name: "Canchas",
+                routeTemplate: "api/Canchas",
+                defaults: new
+                {
+                    controller = "Canchas"
+                }
+            );
+            #endregion
+
+            #region  Foto
+            config.Routes.MapHttpRoute(
+                name: "Foto",
+                routeTemplate: "api/Foto",
+                defaults: new
+                {
+                    controller = "Foto"
+                }
+            );
+            #endregion
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
