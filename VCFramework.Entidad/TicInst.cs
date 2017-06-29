@@ -7,7 +7,7 @@ using VCFramework.Negocio.Factory;
 
 namespace VCFramework.Entidad
 {
-    public class RlTicInst
+    public class TicInst
     {
         public static System.Configuration.ConnectionStringSettings setCnsWebLun = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["BDColegioSql"];
 
@@ -28,10 +28,10 @@ namespace VCFramework.Entidad
         /// </summary>
         /// <param name="entidad"></param>
         /// <returns></returns>
-        public static int Insertar(VCFramework.Entidad.RlTicInst entidad)
+        public static int Insertar(VCFramework.Entidad.TicInst entidad)
         {
             Factory fac = new Factory();
-            return fac.Insertar<VCFramework.Entidad.RlTicInst>(entidad, setCnsWebLun);
+            return fac.Insertar<VCFramework.Entidad.TicInst>(entidad, setCnsWebLun);
         }
 
         /// <summary>
@@ -39,10 +39,10 @@ namespace VCFramework.Entidad
         /// </summary>
         /// <param name="entidad"></param>
         /// <returns></returns>
-        public static int Actualizar(VCFramework.Entidad.RlTicInst entidad)
+        public static int Actualizar(VCFramework.Entidad.TicInst entidad)
         {
             Factory fac = new Factory();
-            return fac.Update<VCFramework.Entidad.RlTicInst>(entidad, setCnsWebLun);
+            return fac.Update<VCFramework.Entidad.TicInst>(entidad, setCnsWebLun);
         }
 
         /// <summary>
@@ -50,18 +50,18 @@ namespace VCFramework.Entidad
         /// </summary>
         /// <param name="entidad"></param>
         /// <returns></returns>
-        public static int Eliminar(VCFramework.Entidad.RlTicInst entidad)
+        public static int Eliminar(VCFramework.Entidad.TicInst entidad)
         {
             entidad.Eliminado = 1;
             Factory fac = new Factory();
-            return fac.Update<VCFramework.Entidad.RlTicInst>(entidad, setCnsWebLun);
+            return fac.Update<VCFramework.Entidad.TicInst>(entidad, setCnsWebLun);
         }
 
         /// <summary>
         /// Listar Todo
         /// </summary>
         /// <returns></returns>
-        public static List<VCFramework.Entidad.RlTicInst> Listar()
+        public static List<VCFramework.Entidad.TicInst> Listar()
         {
             VCFramework.Negocio.Factory.Factory fac = new VCFramework.Negocio.Factory.Factory();
             FiltroGenerico filtro = new FiltroGenerico();
@@ -69,11 +69,11 @@ namespace VCFramework.Entidad
             filtro.TipoDato = TipoDatoGeneral.Entero;
             filtro.Valor = "0";
 
-            List<object> lista = fac.Leer<VCFramework.Entidad.RlTicInst>(filtro, setCnsWebLun);
-            List<VCFramework.Entidad.RlTicInst> lista2 = new List<VCFramework.Entidad.RlTicInst>();
+            List<object> lista = fac.Leer<VCFramework.Entidad.TicInst>(filtro, setCnsWebLun);
+            List<VCFramework.Entidad.TicInst> lista2 = new List<VCFramework.Entidad.TicInst>();
             if (lista != null)
             {
-                lista2 = lista.Cast<VCFramework.Entidad.RlTicInst>().ToList();
+                lista2 = lista.Cast<VCFramework.Entidad.TicInst>().ToList();
             }
 
             return lista2;
@@ -84,7 +84,7 @@ namespace VCFramework.Entidad
         /// </summary>
         /// <param name="id">Identificador del elemento</param>
         /// <returns></returns>
-        public static List<VCFramework.Entidad.RlTicInst> ListarPorId(int id)
+        public static List<VCFramework.Entidad.TicInst> ListarPorId(int id)
         {
             VCFramework.Negocio.Factory.Factory fac = new VCFramework.Negocio.Factory.Factory();
             FiltroGenerico filtro = new FiltroGenerico();
@@ -101,11 +101,11 @@ namespace VCFramework.Entidad
             filtros.Add(filtro);
             filtros.Add(filtro2);
 
-            List<object> lista = fac.Leer<VCFramework.Entidad.RlTicInst>(filtros, setCnsWebLun);
-            List<VCFramework.Entidad.RlTicInst> lista2 = new List<VCFramework.Entidad.RlTicInst>();
+            List<object> lista = fac.Leer<VCFramework.Entidad.TicInst>(filtros, setCnsWebLun);
+            List<VCFramework.Entidad.TicInst> lista2 = new List<VCFramework.Entidad.TicInst>();
             if (lista != null)
             {
-                lista2 = lista.Cast<VCFramework.Entidad.RlTicInst>().ToList();
+                lista2 = lista.Cast<VCFramework.Entidad.TicInst>().ToList();
             }
 
             return lista2;
@@ -116,7 +116,7 @@ namespace VCFramework.Entidad
         /// </summary>
         /// <param name="id">Identificador del elemento</param>
         /// <returns></returns>
-        public static List<VCFramework.Entidad.RlTicInst> ListarPorInstId(int instId)
+        public static List<VCFramework.Entidad.TicInst> ListarPorInstId(int instId)
         {
             VCFramework.Negocio.Factory.Factory fac = new VCFramework.Negocio.Factory.Factory();
             FiltroGenerico filtro = new FiltroGenerico();
@@ -133,11 +133,11 @@ namespace VCFramework.Entidad
             filtros.Add(filtro);
             filtros.Add(filtro2);
 
-            List<object> lista = fac.Leer<VCFramework.Entidad.RlTicInst>(filtros, setCnsWebLun);
-            List<VCFramework.Entidad.RlTicInst> lista2 = new List<VCFramework.Entidad.RlTicInst>();
+            List<object> lista = fac.Leer<VCFramework.Entidad.TicInst>(filtros, setCnsWebLun);
+            List<VCFramework.Entidad.TicInst> lista2 = new List<VCFramework.Entidad.TicInst>();
             if (lista != null)
             {
-                lista2 = lista.Cast<VCFramework.Entidad.RlTicInst>().ToList();
+                lista2 = lista.Cast<VCFramework.Entidad.TicInst>().ToList();
             }
 
             return lista2;

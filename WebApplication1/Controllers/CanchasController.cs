@@ -33,11 +33,11 @@ namespace WebApplication1.Controllers
             HttpResponseMessage httpResponse = new HttpResponseMessage();
             try
             {
-                List<VCFramework.Entidad.RlTicInst> canchas = new List<VCFramework.Entidad.RlTicInst>();
+                List<VCFramework.Entidad.TicInst> canchas = new List<VCFramework.Entidad.TicInst>();
                 if (idBuscar > 0)
-                    canchas = VCFramework.Entidad.RlTicInst.ListarPorId(idBuscar);
+                    canchas = VCFramework.Entidad.TicInst.ListarPorId(idBuscar);
                 else
-                    canchas = new List<VCFramework.Entidad.RlTicInst>();
+                    canchas = new List<VCFramework.Entidad.TicInst>();
 
                 if (canchas != null)
                 {
@@ -70,8 +70,8 @@ namespace WebApplication1.Controllers
             HttpResponseMessage httpResponse = new HttpResponseMessage();
             try
             {
-                List<VCFramework.Entidad.RlTicInst> canchas = new List<VCFramework.Entidad.RlTicInst>();
-                canchas = VCFramework.Entidad.RlTicInst.ListarPorInstId(int.Parse(instId));
+                List<VCFramework.Entidad.TicInst> canchas = new List<VCFramework.Entidad.TicInst>();
+                canchas = VCFramework.Entidad.TicInst.ListarPorInstId(int.Parse(instId));
 
                 if (canchas != null)
                 {
@@ -117,21 +117,26 @@ namespace WebApplication1.Controllers
                 string disciplina = data.Disciplina;
                 string instId = data.InstId;
                 int eliminado = 0;
+                
+                List<VCFramework.Entidad.TicInst> canchas = VCFramework.Entidad.TicInst.ListarPorId(int.Parse(id));
+                VCFramework.Entidad.TicInst cancha = new TicInst();
+                if (canchas != null && canchas.Count > 0)
+                {
+                    cancha = canchas[0];
 
-                VCFramework.Entidad.RlTicInst cancha = new VCFramework.Entidad.RlTicInst();
-                cancha.Id = int.Parse(id);
-                cancha.Nombre = nombre;
-                cancha.TicId = int.Parse(ticId);
-                cancha.FotoUno = fotoUno;
-                cancha.FotoDos = fotoDos;
-                cancha.FotoTres = fotoTres;
-                cancha.Eliminado = eliminado;
-                cancha.InstId = int.Parse(instId);
-                cancha.ValorSegmento = int.Parse(valorSegmento);
-                cancha.DescuentoSegmento = int.Parse(descuentoSegmento);
-                cancha.Disciplina = disciplina;
-
-                nuevoId = VCFramework.Entidad.RlTicInst.Actualizar(cancha);
+                    cancha.Nombre = nombre;
+                    cancha.TicId = int.Parse(ticId);
+                    cancha.FotoUno = fotoUno;
+                    cancha.FotoDos = fotoDos;
+                    cancha.FotoTres = fotoTres;
+                    cancha.Eliminado = eliminado;
+                    cancha.InstId = int.Parse(instId);
+                    cancha.ValorSegmento = int.Parse(valorSegmento);
+                    cancha.DescuentoSegmento = int.Parse(descuentoSegmento);
+                    cancha.Disciplina = disciplina;
+                }
+                nuevoId = cancha.Id;
+                VCFramework.Entidad.TicInst.Actualizar(cancha);
 
                 if (nuevoId > 0)
                 {
@@ -181,7 +186,7 @@ namespace WebApplication1.Controllers
                 string instId = data.InstId;
                 int eliminado = 0;
 
-                VCFramework.Entidad.RlTicInst cancha = new VCFramework.Entidad.RlTicInst();
+                VCFramework.Entidad.TicInst cancha = new VCFramework.Entidad.TicInst();
                 cancha.Id = int.Parse(id);
                 cancha.Nombre = nombre;
                 cancha.TicId = int.Parse(ticId);
@@ -194,7 +199,7 @@ namespace WebApplication1.Controllers
                 cancha.DescuentoSegmento = int.Parse(descuentoSegmento);
                 cancha.Disciplina = disciplina;
 
-                nuevoId = VCFramework.Entidad.RlTicInst.Insertar(cancha);
+                nuevoId = VCFramework.Entidad.TicInst.Insertar(cancha);
 
                 if (nuevoId > 0)
                 {
@@ -237,13 +242,13 @@ namespace WebApplication1.Controllers
             {
                 string id = data.Id;
                 int idBuscar = int.Parse(id);
-                List<VCFramework.Entidad.RlTicInst> cancha = VCFramework.Entidad.RlTicInst.ListarPorId(idBuscar);
+                List<VCFramework.Entidad.TicInst> cancha = VCFramework.Entidad.TicInst.ListarPorId(idBuscar);
 
                 if (cancha != null && cancha[0].Id > 0)
                 {
                     cancha[0].Eliminado = 1;
 
-                    int idEliminado = VCFramework.Entidad.RlTicInst.Actualizar(cancha[0]);
+                    int idEliminado = VCFramework.Entidad.TicInst.Actualizar(cancha[0]);
 
                     httpResponse = new HttpResponseMessage(HttpStatusCode.OK);
                     String JSON = JsonConvert.SerializeObject(cancha);

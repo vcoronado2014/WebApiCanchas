@@ -26,7 +26,7 @@ namespace WebApplication1.Controllers
         public HttpResponseMessage CreateContestEntry()
         {
 
-            VCFramework.Entidad.RlTicInst entidad = new VCFramework.Entidad.RlTicInst();
+            VCFramework.Entidad.TicInst entidad = new VCFramework.Entidad.TicInst();
             HttpResponseMessage httpResponse = new HttpResponseMessage();
             try
             {
