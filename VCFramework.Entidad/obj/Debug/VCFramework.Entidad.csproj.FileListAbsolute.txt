@@ -14,3 +14,4 @@ C:\AP_CANCHAS\WebApiCanchas\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.cs
 C:\AP_CANCHAS\WebApiCanchas\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.dll
 C:\AP_CANCHAS\WebApiCanchas\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.pdb
 D:\Nuevo_Canchas\webApi\WebApiCanchas\VCFramework.Entidad\obj\Debug\VCFramework.Entidad.csprojResolveAssemblyReference.cache
+C:\AP_CANCHAS\WebApiCanchas\VCFramework.Entidad\bin\Debug\VCFramework.Negocio.Factory.dll
