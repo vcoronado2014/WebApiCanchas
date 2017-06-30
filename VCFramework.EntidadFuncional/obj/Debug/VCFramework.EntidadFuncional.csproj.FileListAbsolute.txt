@@ -21,3 +21,11 @@ C:\AP_CANCHAS\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.E
 C:\AP_CANCHAS\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.csprojResolveAssemblyReference.cache
 C:\AP_CANCHAS\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.dll
 C:\AP_CANCHAS\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.pdb
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.EntidadFuncional.dll
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.EntidadFuncional.pdb
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Entidad.dll
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Negocio.Factory.dll
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\bin\Debug\VCFramework.Entidad.pdb
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.csprojResolveAssemblyReference.cache
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.dll
+D:\Nuevo_Canchas\WebApiCanchas\VCFramework.EntidadFuncional\obj\Debug\VCFramework.EntidadFuncional.pdb
